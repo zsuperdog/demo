@@ -12,7 +12,7 @@ public class HelloWorldController
     @GetMapping
     public String getHelloWorld()
     {
-        return "Hello World";
+        return "Sup World";
     }
 
 }
