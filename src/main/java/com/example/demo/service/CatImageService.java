@@ -13,7 +13,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 public class CatImageService {
     @Bean
     public CatApi catApi() {
-        WebClient webClient = WebClient.builder().baseUrl("https://api.github.com/").build();
+        WebClient webClient = WebClient.builder().build();
         WebClientAdapter adapter = WebClientAdapter.create(webClient);
         HttpServiceProxyFactory factory = HttpServiceProxyFactory.builderFor(adapter).build();
 
